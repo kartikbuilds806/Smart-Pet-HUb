@@ -73,7 +73,7 @@ export default function Home() {
           <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <StaggerItem>
               <Link href="/dogs" className="group relative h-[400px] block rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
-                <Image src="https://images.unsplash.com/photo-1593134257782-e89567b7718a?q=80&w=600" alt="Dogs" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                <Image src="/Dogs/pug-v2.jpg" alt="Dogs" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-8">
                   <h3 className="text-3xl font-bold font-heading text-white mb-2">Dogs & Puppies</h3>
                   <span className="text-accent flex items-center font-bold text-sm uppercase tracking-wider group-hover:translate-x-2 transition-transform">Explore Breeds <ChevronRight className="h-5 w-5 ml-1" /></span>
@@ -82,7 +82,7 @@ export default function Home() {
             </StaggerItem>
             <StaggerItem>
               <Link href="/cats" className="group relative h-[400px] block rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
-                <Image src="https://images.unsplash.com/photo-1513245543132-31f507417b26?q=80&w=600" alt="Cats" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                <Image src="/Cats/persian%20cat.jpg" alt="Cats" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-8">
                   <h3 className="text-3xl font-bold font-heading text-white mb-2">Cats & Kittens</h3>
                   <span className="text-accent flex items-center font-bold text-sm uppercase tracking-wider group-hover:translate-x-2 transition-transform">Explore Breeds <ChevronRight className="h-5 w-5 ml-1" /></span>
@@ -91,7 +91,7 @@ export default function Home() {
             </StaggerItem>
             <StaggerItem>
               <Link href="/fish" className="group relative h-[400px] block rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
-                <Image src="https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?q=80&w=600" alt="Fish" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                <Image src="/aquarium.png" alt="Fish" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-8">
                   <h3 className="text-3xl font-bold font-heading text-white mb-2">Aquariums</h3>
                   <span className="text-accent flex items-center font-bold text-sm uppercase tracking-wider group-hover:translate-x-2 transition-transform">Setup & Care <ChevronRight className="h-5 w-5 ml-1" /></span>
@@ -100,7 +100,7 @@ export default function Home() {
             </StaggerItem>
             <StaggerItem>
               <Link href="/shop" className="group relative h-[400px] block rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
-                <Image src="https://images.unsplash.com/photo-1601002242132-72013f99052b?q=80&w=600" alt="Accessories" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                <Image src="/premium_shop_v2.png" alt="Accessories" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-8">
                   <h3 className="text-3xl font-bold font-heading text-white mb-2">Premium Shop</h3>
                   <span className="text-accent flex items-center font-bold text-sm uppercase tracking-wider group-hover:translate-x-2 transition-transform">Shop Now <ChevronRight className="h-5 w-5 ml-1" /></span>
@@ -120,9 +120,9 @@ export default function Home() {
           </FadeIn>
           <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { name: "Royal Canin Maxi Puppy", brand: "Royal Canin", price: "₹850", img: "https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?q=80&w=600" },
-              { name: "Premium Soft Pet Bed", brand: "Smart Pet Hub", price: "₹1,499", img: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=600" },
-              { name: "Persian Cat Dry Food", brand: "Me-O", price: "₹1,250", img: "https://images.unsplash.com/photo-1573865526739-10659fec78a5?q=80&w=600" },
+              { name: "Pedigree Adult Dry Dog Food", brand: "Pedigree", img: "/dog-food-v2.jpg" },
+              { name: "Orthopaedic Dog Bed", brand: "Smart Pet Hub", img: "/pet-bed-v2.jpg" },
+              { name: "Royal Canin Persian Cat Food", brand: "Royal Canin", img: "/cat-food-v2.jpg" },
             ].map((prod, i) => (
               <StaggerItem key={i}>
                 <Card className="group h-full flex flex-col border-none shadow-md hover:shadow-xl transition-all rounded-3xl overflow-hidden">
@@ -131,8 +131,7 @@ export default function Home() {
                   </div>
                   <CardContent className="p-8 flex flex-col flex-1">
                     <div className="text-sm font-bold text-accent uppercase tracking-wider mb-2">{prod.brand}</div>
-                    <h3 className="text-2xl font-bold mb-3">{prod.name}</h3>
-                    <div className="text-2xl font-heading font-bold text-primary mb-8 mt-auto">{prod.price}</div>
+                    <h3 className="text-2xl font-bold mb-8 mt-auto">{prod.name}</h3>
                     <Button variant="secondary" className="w-full gap-2 text-sm h-12 font-bold" asChild>
                       <a href={`https://wa.me/919557208775?text=I'd like to order ${prod.name}`}>
                         <MessageCircle className="h-5 w-5" /> WhatsApp to Order

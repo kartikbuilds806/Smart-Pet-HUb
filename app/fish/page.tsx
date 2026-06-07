@@ -36,10 +36,10 @@ export default function FishAquariumsPage() {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { name: "Neon Tetras", img: "https://images.unsplash.com/photo-1544626053-8998ec4ccbc4?q=80&w=600" },
-              { name: "Discus Fish", img: "https://images.unsplash.com/photo-1520110120835-c96534a4c984?q=80&w=600" },
-              { name: "Betta Fish", img: "https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?q=80&w=600" },
-              { name: "Clownfish", img: "https://images.unsplash.com/photo-1534444558509-5a6390757d59?q=80&w=600" }
+              { name: "Neon Tetras", img: "/fish/tetra.jpg" },
+              { name: "Discus Fish", img: "/fish/discus.jpg" },
+              { name: "Betta Fish", img: "/fish/betta.jpg" },
+              { name: "Clownfish", img: "/fish/clownfish.jpg" }
             ].map((fish, i) => (
               <div key={i} className="group relative h-48 md:h-64 rounded-xl overflow-hidden cursor-pointer">
                 <Image src={fish.img} alt={fish.name} fill className="object-cover transition-transform duration-700 group-hover:scale-110" />

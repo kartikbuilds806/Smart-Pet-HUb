@@ -7,12 +7,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Premium Pet Shop in Dehradun | Dogs, Cats & Accessories | Smart Pet Hub",
-  description: "Looking for a trusted pet shop in Dehradun? Smart Pet Hub serves Dehradun with certified breeds, premium food, and WhatsApp support. Visit us at Rajpur Road.",
+  description: "Looking for a trusted pet shop in Dehradun? Smart Pet Hub serves Dehradun with certified breeds, premium food, and WhatsApp support. Visit us in Premnagar.",
 };
 
 export default function DehradunCityPage() {
   const faqs = [
-    { q: "Is there a premium pet shop near Rajpur Road Dehradun?", a: "Yes! Smart Pet Hub is a premium pet store located near Rajpur Road, Dehradun. We specialize in certified dog and cat breeds, imported pet food, and expert consultation." },
+    { q: "Is there a premium pet shop near Premnagar Dehradun?", a: "Yes! Smart Pet Hub is a premium pet store located in Premnagar, Dehradun. We specialize in certified dog and cat breeds, imported pet food, and expert consultation." },
     { q: "Where can I find fish and aquarium accessories in Dehradun?", a: "Smart Pet Hub in Dehradun offers a complete range of freshwater and marine fish, planted tank setups, and professional aquarium maintenance services across the city." },
     { q: "Which is the best dog breeder in Dehradun?", a: "Rather than visiting unverified breeders, Smart Pet Hub works exclusively with KCI-registered, ethical breeders across India to bring healthy, certified puppies directly to families in Dehradun." },
     { q: "Do you offer home delivery for pet food in Dehradun?", a: "Yes! We offer same-day delivery for premium pet food like Royal Canin and Farmina N&D to all major areas in Dehradun including IT Park, Clement Town, and Mussoorie Road. Just order via WhatsApp." }
@@ -43,7 +43,7 @@ export default function DehradunCityPage() {
         <div className="prose prose-lg max-w-none text-foreground/80">
           <h2 className="text-3xl font-heading font-bold text-foreground mb-6">Why Dehradun Pet Parents Trust Smart Pet Hub</h2>
           <p>
-            Located conveniently near <strong>Rajpur Road</strong> and accessible from <strong>Sahastradhara Road, IT Park, and Clement Town</strong>, Smart Pet Hub has established itself as the leading premium pet shop in Dehradun. The local pet community in Uttarakhand relies on us not just for supplies, but for genuine, vet-backed advice.
+            Located conveniently in <strong>Premnagar</strong> and accessible from <strong>all over Dehradun</strong>, Smart Pet Hub has established itself as the leading premium pet shop in Dehradun. The local pet community in Uttarakhand relies on us not just for supplies, but for genuine, vet-backed advice.
           </p>
           <p>
             Dehradun's unique climate—with its humid monsoons and chilly winters—requires specific care strategies for pets. Whether you're raising a thick-coated Golden Retriever near Mussoorie Road or keeping an indoor Persian Cat in an apartment in Clement Town, our local experts understand exactly what your pet needs to thrive in this region.

@@ -59,7 +59,7 @@ export default function Footer() {
             <ul className="space-y-4 text-white/80">
               <li className="flex gap-3">
                 <MapPin className="h-5 w-5 shrink-0 text-accent" />
-                <span>Rajpur Road, Dehradun, Uttarakhand, 248001</span>
+                <span>Premnagar, Dehradun, Uttarakhand, 248007</span>
               </li>
               <li className="flex gap-3">
                 <Phone className="h-5 w-5 shrink-0 text-accent" />

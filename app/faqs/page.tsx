@@ -14,7 +14,7 @@ export default function FAQsPage() {
     {
       title: "Store & Shipping",
       faqs: [
-        { q: "Where are you located in Dehradun?", a: "We are located on Rajpur Road, Dehradun. Check our Contact page for the exact Google Maps location." },
+        { q: "Where are you located in Dehradun?", a: "We are located in Premnagar, Dehradun. Check our Contact page for the exact Google Maps location." },
         { q: "Do you deliver products outside Dehradun?", a: "We currently deliver premium supplies all across Uttarakhand. However, live pets require in-person pickup to ensure their safety and well-being." },
         { q: "What is your return policy?", a: "We accept returns on unopened pet food and unused accessories within 7 days of purchase. Live pets and medicines are non-refundable." }
       ]

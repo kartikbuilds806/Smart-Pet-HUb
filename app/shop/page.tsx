@@ -62,7 +62,6 @@ export default function ShopPage() {
               "@type": "Product",
               "name": product.name,
               "brand": { "@type": "Brand", "name": product.brand },
-              "offers": { "@type": "Offer", "priceCurrency": "INR", "price": product.variants[0].price.replace('₹', '').replace(',', ''), "availability": "InStock" },
               "description": product.description,
               "image": product.image
             };
@@ -71,15 +70,15 @@ export default function ShopPage() {
               <Card key={product.id} className="group flex flex-col relative border-none shadow-sm hover:shadow-md transition-shadow">
                 <SchemaMarkup type="Product" data={schemaData} />
                 
-                {product.isNew && (
-                  <div className="absolute top-3 left-3 z-10 bg-accent text-primary text-xs font-bold px-3 py-1 rounded-full shadow-sm">NEW</div>
-                )}
-                {product.isPremium && (
-                  <div className="absolute top-3 right-3 z-10 bg-black text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">PREMIUM</div>
-                )}
-                
+
                 <div className="relative h-64 p-6 bg-white border-b border-black/5 flex items-center justify-center rounded-t-xl overflow-hidden">
                   <Image src={product.image} alt={product.name} fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                  {product.isPrescription && (
+                    <div className="absolute bottom-0 left-0 right-0 z-10 bg-amber-100/95 backdrop-blur-sm text-amber-900 text-xs font-bold py-2 px-3 flex items-center justify-center gap-1.5 border-t border-amber-200">
+                      <ShieldAlert className="h-3.5 w-3.5 text-amber-600" />
+                      Prescription Required
+                    </div>
+                  )}
                 </div>
                 
                 <CardContent className="p-6 flex flex-col flex-1 bg-white rounded-b-xl border border-t-0 border-black/5">
@@ -96,17 +95,6 @@ export default function ShopPage() {
                   </ul>
 
                   <div className="mt-auto space-y-4">
-                    <div>
-                      <span className="text-xs font-bold text-foreground/50 uppercase block mb-2">Available Options:</span>
-                      <div className="flex flex-wrap gap-2">
-                        {product.variants.map((v, i) => (
-                          <div key={i} className="bg-background px-3 py-1 rounded-md text-xs font-bold border border-black/5">
-                            {v.weight} - <span className="text-primary">{v.price}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                    
                     <Button variant="secondary" className="w-full gap-2 font-bold" asChild>
                       <a href={`https://wa.me/919557208775?text=Hi, I would like to order: ${product.name}. Please confirm availability in Dehradun.`}>
                         <MessageCircle className="h-4 w-4" /> Order via WhatsApp

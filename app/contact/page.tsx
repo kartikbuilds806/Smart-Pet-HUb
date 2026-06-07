@@ -59,7 +59,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-2">Visit Our Store</h3>
-                    <p className="text-foreground/70 mb-4">Smart Pet Hub<br />Rajpur Road, Dehradun<br />Uttarakhand, 248001</p>
+                    <p className="text-foreground/70 mb-4">Smart Pet Hub<br />Premnagar, Dehradun<br />Uttarakhand, 248007</p>
                     <div className="flex items-center gap-2 text-sm text-foreground/60 font-medium">
                       <Clock className="h-4 w-4" /> Mon - Sun: 10:00 AM - 9:00 PM
                     </div>
